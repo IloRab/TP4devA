@@ -35,7 +35,20 @@ fastify.after(() => {
             }
         }
     })
+
+    fastify.route({
+        method: 'GET',
+        url: '/autre',
+
+        handler: async (req, reply) => {
+            return {
+                replique: 'Celui qui est déjà mort ne peut pas mourir à nouveau!'
+            }
+        }
+    })
 })
+
+
 
 fastify.setErrorHandler(function (err, req, reply) {
 
