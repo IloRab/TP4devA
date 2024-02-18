@@ -59,28 +59,6 @@ fastify.after(() => {
         }
     })
 
-    fastify.route({
-        method: 'POST',
-        url: '/signup',
-
-        handler: async (req, reply) => {
-            return {
-
-            }
-        }
-    })
-
-    fastify.route({
-        method: 'POST',
-        url: '/signin',
-
-        handler: async (req, reply) => {
-            return {
-
-            }
-        }
-    })
-
 })
 
 
